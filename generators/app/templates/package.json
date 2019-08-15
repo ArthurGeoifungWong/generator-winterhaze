@@ -1,8 +1,12 @@
 {
-  "name": "authoritymanagementsystem",
+  "name": "<%= name %>",
+  "description": "<%= description %>",
   "version": "1.0.0",
-  "description": "this is.",
-  "author": "kuifung <luoxuanhuang@qq.com>",
+  "keywords": [<% for(var i=0; i<keywords.length; i++) {%>
+    "<%= keywords[i] %>"<% if(i<keywords.length-1) {%>,<% } %><% } %>
+  ],
+  "author": "<%= author %>",
+  "email": "<%= email %>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -17,6 +21,7 @@
   "devDependencies": {
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "copy-webpack-plugin": "^4.0.1",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
