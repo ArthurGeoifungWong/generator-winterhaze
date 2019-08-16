@@ -33,6 +33,18 @@ module.exports = {
     }
   },
 
+  module: {
+    rules: [
+      // {
+      //   loader: 'style-loader!css-loader'
+      // }
+      {
+        test: /\.(htm|html)$/,
+        loader: 'raw-loader'
+      }
+    ]
+  },
+
   devServer: {
     // clientLogLevel: 'warning',
     historyApiFallback: true,
@@ -43,7 +55,8 @@ module.exports = {
     // },
     // inline: true,
     hot: true,
-    contentBase: false,
+    // contentBase: false,
+    contentBase: path.resolve(__dirname, './'),
     compress: true,
     host: 'localhost',
     port: 9000,
