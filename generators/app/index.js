@@ -63,6 +63,10 @@ module.exports = class extends Generator {
       this.destinationPath('build/')
     );
     this.fs.copy(
+      this.templatePath('config/'),
+      this.destinationPath('config/')
+    );
+    this.fs.copy(
       this.templatePath('src/'),
       this.destinationPath('src/')
     );
