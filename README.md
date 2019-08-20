@@ -1,4 +1,6 @@
-# generator-winterhaze [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-winterhaze 
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+<img src="https://img.shields.io/badge/license-MIT-green"> <img alt="" src="https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen">
 > this is a test for.
 
 ## Installation
